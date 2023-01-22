@@ -1,7 +1,8 @@
 #!/bin/bash
 
-cd renderengine
+cd rendengine
 R -e "devtools::build()"
+cd ..
 R -e "devtools::install()"
 
 cd ..
